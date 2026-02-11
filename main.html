@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<title>
+		  12 Jyotirlingas of Mahadev
+		</title>
+
+<style>
+  /* ================= FONTS ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Hind:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Samarkan';
+  src: url('hinglish-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================= BODY ================= */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #ff7722;
+    padding-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel';
+    text-align: center;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ff7722;
+}
+
+h1, p, li {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+p, li {
+    font-family: 'PT Serif';
+    font-weight: bold;
+}
+
+.hin-shlo {
+    font-family: 'Kalam';
+    font-size: 24px;
+    max-width: 1000px;
+    margin: 0 auto;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-desc {
+    font-family: 'Lora';
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.image-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 24px;
+    margin: 32px auto;
+    max-width: 1200px;
+}
+
+.image-pair img {
+    max-width: 48%;
+    height: auto;
+    display: block;
+}
+
+.hinglish-head {
+    font-family: 'Samarkan';
+    font-size: 60px;
+    margin-bottom: 2px;
+}
+
+/* ================= HEADER ================= */
+
+.site-header {
+    background-color: #f59e0b;
+    margin: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.header-text {
+    text-align: center;
+    justify-self: center;
+    max-width: 700px;
+}
+
+.header-spacer {
+    width: 48px;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    justify-self: start;
+}
+
+.logo-img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-link:hover,
+.logo-link:focus,
+.logo-link:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    color: #3F3F46;
+    font-size: 40px;	
+}
+
+.header-text p {
+    margin: 4px 0 0;
+    font-family: 'Hind', serif;
+    color: #3F3F46;
+    font-size: 32px;
+}
+
+
+/* ================= TABLE ================= */
+
+.main-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+    background-color: #e5e5e5;
+    margin-top: 40px;
+}
+
+.main-table thead {
+    background: linear-gradient(
+        135deg,
+        #d97706,
+        #f59e0b
+    );
+    color: #000000;
+}
+
+.main-table tbody tr {
+    opacity: 0;
+    transform: translateY(20px);
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+    position: relative;
+    z-index: 0;
+}
+
+.main-table tbody tr:hover {
+    transform: scale(5);
+    background-color: #a0a0a0;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 3);
+    z-index: 10;
+}
+
+.main-table tbody tr.animate {
+    animation: slideInUp 0.6s ease forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-table th, td {
+    border: none;
+    border-bottom: 1.2px solid #676767;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bitter';
+}
+
+.temple-name {
+    font-family: 'Samarkan';
+    font-size: 22px;
+}
+
+.main-table th {
+    border-bottom: 2.5px solid #676767;
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+.main-table td {
+    color: #676767;
+}
+
+.main-table td.sl-no {
+    color: #1F2933;
+}
+
+/* ================= FOOTER ================= */
+
+.site-footer {
+    background-color: #f59e0b;
+    margin: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.footer-text {
+    text-align: center;
+    justify-self: center;
+}
+
+.footer-spacer {
+    width: 48px;
+}
+
+.footer-text h1 {
+    margin: 0;
+    font-family: 'Hind', serif;
+    color: #3F3F46;
+    font-size: 40px;	
+}
+
+.footer-text p {
+    margin: 4px 0 0;
+    font-family: 'Cinzel', serif;
+    color: #3F3F46;
+    font-size: 20px;
+    max-width: 1400px;
+    margin-bottom: 40px;
+}
+
+/* ================= ANIMATION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .main-table tbody tr {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+
+
+</style>
+    
+	</head>
+	
+	<body>
+	<header class="site-header">
+		<div class="header-inner">
+        <a href="main.html" class="logo-link">
+            <img src="sites/photos/logo.png" class="logo-img">
+        </a>
+          <div class="header-text">
+            <h1>The 12 Jyotirlingas of Mahadev</h1>
+            <p>हर हर महादेव!</p>
+          </div>
+        <div class="header-spacer"></div>
+    	</div>
+	</header>
+
+     <div class ="container">
+		 <h1>Mythology - Shiv Puran</h1>
+		   <h2>The Race</h2>
+			  <p>
+                One day, the creator Brahma and the Preserver Vishnu had an argument over their supremacy. They were hurling abuses at each other, then started preparing for a battle. When they were about to commence, a endless, infinite pillar of light appeared before them. To end their debate, they decided that whoever could find the end of the pillar would be the superior. Shri Vishnu took the avatar of a wild boar (Varaha) and tried to find the end of the pillar, while Brahma mounted a white swan and head for the skies to find the pillar's beginning. As the pillar was infinite, finding its ends was an impossible task. Vishnu found nothing and returned, while Brahma returned with a Ketaki flower which was falling down the pillar. Brahma lied that he had found the top and produced the Ketaki flower as his witness as Vishnu accepted his supremacy. Just then, an infuriated Shiva appeared. He exposed the creator's lies by proclaiming the pillar of light as a Jyotirlinga and by telling its infiniteness. He cursed Brahma for lying, proclaiming he would <em>never</em> be worshiped on earth, which still stands today, while blessing Shri Vishnu for telling the truth, proclaiming that he would be worshipped for ages on earth with plenty of temples in his name.
+              </p>
+		 		<img src="sites/photos/vishnubrahma.png" height="400px" width="auto">
+		 			<p class="img-desc">
+						An AI Generated image of Brahma and Vishnu standing before the Jyotirlinga, awestruck.
+					</p>
+		    <h2>
+                The Jyotirlingas
+            </h2>
+              <p>
+                  According to the Shiv Puran, the places where Lord Shiva manifested himself as the pillar of light was a Jyotirlinga. At all these sites, there is a linga representing the beginningless and endless stambha, symbolising the infinite nature of Lord Shiva. There are 64 original Jyotirlingas, out of which 12 are the most sacred. A Stuthi composed by by Jagadguru Shri Adi Shankaracharya states those 12 :-
+              </p>
+		      <p class ="hin-shlo">
+				  सौराष्ट्रे सोमनाथं च श्रीशैले मल्लिकार्जुनम् |<br>
+				  उज्जयिन्यां महाकालं ओंकारं ममलेश्वरम् ॥<br>
+				  परल्यां वैद्यनाथं च डाकिन्यां भीमशङ्करम् ।<br>
+				  सेतुबन्धे तु रामेशं नागेशं दारुकावने ॥<br>
+				  वाराणस्यां तु विश्वेशं त्र्यम्बकं गौतमीतटे ।<br>
+				  हिमालये तु केदारं घुश्मेशं च शिवालये ॥<br>
+				  एतानि ज्योतिर्लिङ्गानि सायं प्रातः पठेन्नरः ।<br>
+				  सप्तजन्मकृतं पापं स्मरणेन विनश्यति ॥<br>
+				  एतेषां दर्शनादेव पातकं नैव तिष्ठति ।<br>
+				  कर्मक्षयो भवेत्तस्य यस्य तुष्टो महेश्वराः ॥
+			  </p>
+		 	 <table class ="main-table">
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Temple</th>
+                        <th>Location</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-link="sites/somnath.html" data-audio="audio/tr1.mp3">
+                        <td class ="sl-no">1.</td>
+                        <td class ="temple-name">Shri Somnath</td>
+                        <td> Prabhas Patan, Veraval</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr data-link="sites/mallikarjun.html">
+                        <td class ="sl-no">2.</td>
+                        <td class ="temple-name">Shri Mallikarjun</td>
+                        <td>Srisailam, Nandyal</td>
+                        <td>Andhra Pradesh</td>
+                    </tr>
+                    <tr data-link="sites/mahakaal.html">
+                        <td class ="sl-no">3.</td>
+                        <td class ="temple-name">Shri Mahakaleshwar</td>
+                        <td>Jaisinghpura, Ujjain</td>
+                        <td>Madhya Pradesh</td>
+                    </tr>
+                    <tr data-link="sites/omkar.html">
+                        <td class ="sl-no">4.</td>
+                        <td class ="temple-name">Shri Omkareshwar and Shri Mamleshwar</td>
+                        <td>Mandhata, Khandwa</td>
+                        <td>Madhya Pradesh</td>
+                    </tr>
+                    <tr data-link="sites/baidyanath.html">
+                        <td class ="sl-no">5.</td>
+                        <td class ="temple-name">Shri Baidyanath</td>
+                        <td>Shivganga, Deoghar*</td>
+                        <td>Jharkhand*</td>
+                    </tr>
+                    <tr data-link="sites/nageshwar.html">
+                        <td class ="sl-no">6.</td>
+                        <td class ="temple-name">Shri Nageshwar</td>
+                        <td>Daarukavanam, Dwaraka*</td>
+                        <td>Gujarat*</td>
+                    </tr>
+                    <tr data-link="sites/kedarnath.html">
+                        <td class ="sl-no">7.</td>
+                        <td class ="temple-name">Shri Kedarnath</td>
+                        <td>Kedarnath, Sonprayag</td>
+                        <td>Uttarakhand</td>
+                    </tr>
+                    <tr data-link="sites/trimbakeshwar.html">
+                        <td class ="sl-no">8.</td>
+                        <td class ="temple-name">Shri Trimbakeshwar</td>
+                        <td>Trimbak, Nashik</td>
+                        <td>Maharashtra</td>
+                    </tr>
+                    <tr data-link="sites/rameshwaram.html">
+                        <td class ="sl-no">9.</td>
+                        <td class ="temple-name">Shri Ramanathaswamy</td>
+                        <td>Rameshwaram, Ramanathapuram</td>
+                        <td>Tamil Nadu</td>
+                    </tr>
+                    <tr data-link="sites/bhimashankar.html">
+                        <td class ="sl-no">10.</td>
+                        <td class ="temple-name">Shri Bhimashankar</td>
+                        <td>Bhimashankar, Shri Bhimashankar Jyotirlinga Wildlife Reserve*</td>
+                        <td>Maharashtra*</td>
+                    </tr>
+                    <tr data-link="sites/vishwanath.html">
+                        <td class ="sl-no">11.</td>
+                        <td class ="temple-name">Shri Vishwanath</td>
+                        <td>Ghats of Varanasi, Kashi</td>
+                        <td>Uttar Pradesh</td>
+                    </tr>
+                    <tr data-link="sites/grishneshwar.html">
+                        <td class ="sl-no">12.</td>
+                        <td class ="temple-name">Shri Grishneshwar</td>
+                        <td>Ellora, Verul</td>
+                        <td>Maharashtra</td>
+                    </tr>
+                </tbody>
+            </table>
+		 </div>
+
+	<footer class="site-footer">
+    <div class="footer-text">
+        <h1>नमः पार्वती पतये - हर हर महादेव!</h1>
+        <p>
+            *Locations of some Jyotirlingas are disputed as they are not mentioned clearly in the Shiv Puran. The locations shown here are the most widely accepted ones, with others on the site pages.
+        </p>
+        <p>
+            Information compiled from Wikipedia, ChatGPT and other notable sources.
+        </p>
+    </div>
+	</footer>
+		
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    /* =====================================
+       TABLE: SCROLL ANIMATION + CLICK
+       ===================================== */
+
+    const table = document.querySelector(".main-table");
+
+    if (table) {
+        const rows = table.querySelectorAll("tbody tr");
+
+        const observer = new IntersectionObserver(
+            (entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        rows.forEach((row, index) => {
+                            row.style.animationDelay = `${index * 0.2}s`;
+                            row.classList.add("animate");
+                        });
+                        obs.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(table);
+
+        rows.forEach(row => {
+            const link = row.getAttribute("data-link");
+
+            if (link) {
+                row.style.cursor = "pointer";
+                row.setAttribute("tabindex", "0");
+
+                row.addEventListener("click", () => {
+                    window.location.href = link;
+                });
+
+                row.addEventListener("keydown", (e) => {
+                    if (e.key === "Enter") {
+                        window.location.href = link;
+                    }
+                });
+            }
+        });
+    }
+
+    /* =====================================
+       SHLOKA PLAYBACK ON FIRST SCROLL
+       ===================================== */
+
+    const shlokaSrc = document.body.getAttribute("data-shloka");
+    if (!shlokaSrc) return;
+
+    const shlokaAudio = new Audio(shlokaSrc);
+    shlokaAudio.volume = 0.4;
+    shlokaAudio.preload = "auto";
+
+    let hasPlayed = false;
+
+    const playOnFirstScroll = () => {
+        if (hasPlayed) return;
+
+        shlokaAudio.play().catch(() => {});
+        hasPlayed = true;
+
+        window.removeEventListener("scroll", playOnFirstScroll);
+        window.removeEventListener("touchmove", playOnFirstScroll);
+    };
+
+    // Desktop & mobile scroll
+    window.addEventListener("scroll", playOnFirstScroll, { once: true });
+    window.addEventListener("touchmove", playOnFirstScroll, { once: true });
+
+
+    /* =====================================
+       TAB SWITCH BEHAVIOR
+       ===================================== */
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            // Pause ONLY (do NOT reset)
+            shlokaAudio.pause();
+        } else {
+            // Resume automatically if already played
+            if (hasPlayed) {
+                shlokaAudio.play().catch(() => {});
+            }
+        }
+    });
+
+
+    /* =====================================
+       STOP AUDIO ON PAGE LEAVE / REFRESH
+       ===================================== */
+
+    window.addEventListener("beforeunload", () => {
+        shlokaAudio.pause();
+        shlokaAudio.currentTime = 0;
+    });
+
+});
+    </script>
+		
+	</body>
+</html>
+
+
