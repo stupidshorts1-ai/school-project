@@ -73,6 +73,10 @@ p, li {
     margin-bottom: 2px;
 }
 
+a {
+    color: inherit;
+}
+
 /* ================= HEADER ================= */
 
 .site-header {
