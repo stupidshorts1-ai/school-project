@@ -7,6 +7,7 @@
   src: url('temple-font.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* ================= BODY ================= */
@@ -80,7 +81,7 @@ p, li {
     background-color: #ff7722;
     margin: 20px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
     margin-bottom: 40px;
 }
 
@@ -150,11 +151,7 @@ p, li {
 }
 
 .main-table thead {
-    background: linear-gradient(
-        135deg,
-        #d97706,
-        #f59e0b
-    );
+    background-color: #ff7722;
     color: #000000;
 }
 
@@ -194,8 +191,10 @@ p, li {
 
 .site-footer {
     background-color: #ff7722;
+    margin: 20px;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+    margin-top: 40px;
 }
 
 .footer-text {
@@ -209,7 +208,7 @@ p, li {
 
 .footer-text h1 {
     margin: 0;
-    font-family: 'Hind', serif;
+    font-family: 'Cinzel', serif;
     color: #3F3F46;
     font-size: 40px;	
 }
