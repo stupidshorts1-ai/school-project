@@ -35,16 +35,39 @@ h1, p, li {
     text-align: center;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-
 p, li {
     font-family: 'PT Serif';
     font-weight: bold;
     font-size: 20px;
+}
+
+.temple-name {
+    font-family: 'Samarkan';
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.intro-headings {
+    font-family: 'Samarkan';
+    font-size: 40px;
+}
+
+.temple-headings {
+    font-family: 'Lora';
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+}
+
+/* ================= IMAGES ================= */
+
+img {
+    display: block;
+    margin: 0 auto;
 }
 	
 .img-desc {
@@ -69,28 +92,6 @@ p, li {
     display: block;
 }
 
-.temple-name {
-    font-family: 'Samarkan';
-    font-size: 24px;
-    margin-bottom: 2px;
-}
-
-.intro-headings {
-	font-family: 'Samarkan';
-    font-size: 40px;
-}
-
-.temple-headings {
-    font-family: 'Lora';
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-a {
-    color: inherit;
-}
-
 .h-img {
     display: flex;
     justify-content: center;
@@ -103,6 +104,21 @@ a {
 .h-img img {
   width: 75%;
   height: auto;
+  object-fit: contain;
+}
+
+.v-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 32px auto;
+}
+
+.v-img img {
+  height: 700px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
