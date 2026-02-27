@@ -41,12 +41,6 @@ p, li {
     font-size: 20px;
 }
 
-.temple-name {
-    font-family: 'Samarkan';
-    font-size: 24px;
-    margin-bottom: 2px;
-}
-
 .intro-headings {
     font-family: 'Samarkan';
     font-size: 40px;
@@ -230,6 +224,12 @@ img {
 
 .main-table td.sl-no {
     color: #1F2933;
+}
+
+.main-table td.temple-name {
+    font-family: 'Samarkan';
+    font-size: 24px;
+    margin-bottom: 2px;
 }
 
 /* ================= FOOTER ================= */
