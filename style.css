@@ -48,7 +48,8 @@ p, li {
 }
 
 p {
-    padding: 40px;
+  padding-inline: 20px;
+  padding-block: 0;
 }
 
 .intro-headings {
