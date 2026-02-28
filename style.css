@@ -31,27 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0; 
-  margin-left: 0;
-}
-
-h1, p, li {
-    text-align: center;
-}
-
-p, li {
-    font-family: 'PT Serif';
-    font-weight: bold;
-    font-size: 20px;
-}
-
-p {
-  padding-inline: 20px;
-  padding-block: 0;
-}
-
 .intro-headings {
     font-family: 'Samarkan';
     font-size: 40px;
@@ -59,11 +38,29 @@ p {
     background-color: #e5e5e5;
 }
 
+p, li {
+    text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0; 
+  margin-left: 0;
+}
+
 .temple-headings {
     font-family: 'Lora';
     font-size: 28px;
     font-weight: bold;
     font-style: italic;
+}
+
+.temple-headings p {
+    font-family: 'PT Serif';
+    font-weight: bold;
+    font-size: 20px;
+	padding-inline: 20px;
+    padding-block: 0;
 }
 
 a {
