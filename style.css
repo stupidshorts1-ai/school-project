@@ -82,7 +82,7 @@ img {
     font-style: italic;
 }
 
-.image-pair {
+.img-pair {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -91,7 +91,7 @@ img {
     max-width: 1200px;
 }
 
-.image-pair img {
+.img-pair img {
     max-width: 48%;
     height: auto;
     display: block;
