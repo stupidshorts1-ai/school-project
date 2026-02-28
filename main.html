@@ -14,280 +14,291 @@
 
 <!--======= CSS =======-->
 
-<style>
-/* ================= FONTS ================= */
+        <style>
+            /* ================= FONTS ================= */
 
-@font-face {
-  font-family: 'Samarkan';
-  src: url('temple-font.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+            @font-face {
+            font-family: 'Samarkan';
+            src: url('temple-font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            }
 
-/* ================= BODY ================= */
+            /* ================= BODY ================= */
 
-html {
-    min-height: 100%;
-    scroll-behavior: smooth;
-}
+            html {
+                min-height: 100%;
+                scroll-behavior: smooth;
+            }
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: linear-gradient(
-        135deg,
-        rgb(255, 0, 0),
-        rgb(255, 255, 0)
-    );
-    background-attachment: fixed;
-}
+            body {
+                margin: 0;
+                min-height: 100vh;
+                background: linear-gradient(
+                    135deg,
+                    rgb(255, 0, 0),
+                    rgb(255, 255, 0)
+                );
+                background-attachment: fixed;
+            }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cinzel';
-    text-align: center;
-}
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Cinzel';
+                text-align: center;
+            }
 
-.intro-headings {
-    font-family: 'Samarkan';
-    font-size: 40px;
-    color: #676767;
-    background-color: #e5e5e5;
-}
+            .intro-headings {
+                font-family: 'Samarkan';
+                font-size: 40px;
+                color: #676767;
+                background-color: #e5e5e5;
+            }
 
-p, li {
-    text-align: center;
-}
+            p, li {
+                text-align: center;
+            }
 
-ul {
-  list-style: none;
-  padding-left: 0; 
-  margin-left: 0;
-}
+            ul {
+            list-style: none;
+            padding-left: 0; 
+            margin-left: 0;
+            }
 
-.temple-headings {
-    font-family: 'Lora';
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-}
+            .temple-headings {
+                font-family: 'Lora';
+                font-size: 28px;
+                font-weight: bold;
+                font-style: italic;
+            }
 
-.temple-headings p {
-    font-family: 'PT Serif';
-    font-weight: bold;
-    font-size: 20px;
-    text-align: justify;
-	font-style: normal;
-	padding-inline: 20px;
-    padding-block: 0;
-}
+            .temple-headings p {
+                font-family: 'PT Serif';
+                font-weight: bold;
+                font-size: 20px;
+                text-align: justify;
+                font-style: normal;
+                padding-inline: 20px;
+                padding-block: 0;
+            }
 
-a {
-    color: inherit;
-}
+            .temple-headingss {
+                font-family: 'PT Serif';
+                font-weight: bold;
+                font-size: 20px;
+                text-align: justify;
+                font-style: normal;
+                padding-inline: 20px;
+                padding-block: 0;
+            }
 
-/* ================= IMAGES ================= */
+            a {
+                color: inherit;
+            }
 
-img {
-    display: block;
-    margin: 0 auto;
-}
-	
-.img-desc {
-    font-family: 'Lora';
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-}
+            /* ================= IMAGES ================= */
 
-.img-pair {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 24px;
-    margin: 32px auto;
-    max-width: 1200px;
-}
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+                
+            .img-desc {
+                font-family: 'Lora';
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+            }
 
-.img-pair img {
-    max-width: 48%;
-    height: auto;
-    display: block;
-}
+            .img-pair {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                gap: 24px;
+                margin: 32px auto;
+                max-width: 1200px;
+            }
 
-.h-img {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 24px;
-    margin: 32px auto;
-    max-width: 1200px;
-}
+            .img-pair img {
+                max-width: 48%;
+                height: auto;
+                display: block;
+            }
 
-.h-img img {
-  width: 75%;
-  height: auto;
-  object-fit: contain;
-}
+            .h-img {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                gap: 24px;
+                margin: 32px auto;
+                max-width: 1200px;
+            }
 
-.v-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  margin: 32px auto;
-}
+            .h-img img {
+            width: 75%;
+            height: auto;
+            object-fit: contain;
+            }
 
-.v-img img {
-  height: 700px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-}
+            .v-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin: 32px auto;
+            }
 
-/* ================= HEADER ================= */
+            .v-img img {
+            height: 700px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            }
 
-.site-header {
-    background-color: #ff7722;
-    margin: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
-    margin-bottom: 40px;
-}
+            /* ================= HEADER ================= */
 
-.header-inner {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 0 24px;
-}
+            .site-header {
+                background-color: #ff7722;
+                margin: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+                margin-bottom: 40px;
+            }
 
-.header-text {
-    text-align: center;
-    justify-self: center;
-    max-width: 700px;
-}
+            .header-inner {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                align-items: center;
+                padding: 0 24px;
+            }
 
-.header-spacer {
-    width: 48px;
-}
+            .header-text {
+                text-align: center;
+                justify-self: center;
+                max-width: 700px;
+            }
 
-.logo-link {
-    display: inline-block;
-    text-decoration: none;
-    justify-self: start;
-}
+            .header-spacer {
+                width: 48px;
+            }
 
-.logo-img {
-    height: 150px;
-    width: auto;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+            .logo-link {
+                display: inline-block;
+                text-decoration: none;
+                justify-self: start;
+            }
 
-.logo-link:hover,
-.logo-link:focus,
-.logo-link:active {
-    text-decoration: none;
-    outline: none;
-}
+            .logo-img {
+                height: 150px;
+                width: auto;
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
-.header-text h1 {
-    margin: 0;
-    font-family: 'Cinzel', serif;
-    color: #3F3F46;
-    font-size: 40px;	
-}
+            .logo-link:hover,
+            .logo-link:focus,
+            .logo-link:active {
+                text-decoration: none;
+                outline: none;
+            }
 
-.header-text p {
-    margin: 4px 0 0;
-    font-family: 'Anek Kannada', serif;
-    color: #3F3F46;
-    font-size: 32px;
-}
+            .header-text h1 {
+                margin: 0;
+                font-family: 'Cinzel', serif;
+                color: #3F3F46;
+                font-size: 40px;	
+            }
 
-/* ================= TABLE ================= */
+            .header-text p {
+                margin: 4px 0 0;
+                font-family: 'Anek Kannada', serif;
+                color: #3F3F46;
+                font-size: 32px;
+            }
 
-.main-table {
-    width: 90%;
-    border-collapse: collapse;
-    margin: auto;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
-    background-color: #e5e5e5;
-    margin-top: 40px;
-    margin-bottom: 50px;
-}
-	
-.main-table th, .main-table td {
-    border: none;
-    border-bottom: 1.2px solid #676767;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Bitter';
-}
+            /* ================= TABLE ================= */
 
-.main-table th {
-    border-bottom: 2.5px solid #676767;
-    background-color: #ff7722;
-    color: #3d3d3d;
-    font-size: 18px;
+            .main-table {
+                width: 90%;
+                border-collapse: collapse;
+                margin: auto;
+                border-radius: 30px;
+                overflow: hidden;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+                background-color: #e5e5e5;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+                
+            .main-table th, .main-table td {
+                border: none;
+                border-bottom: 1.2px solid #676767;
+                padding: 10px;
+                text-align: center;
+                font-family: 'Bitter';
+            }
 
-}
+            .main-table th {
+                border-bottom: 2.5px solid #676767;
+                background-color: #ff7722;
+                color: #3d3d3d;
+                font-size: 18px;
 
-.main-table td {
-    color: #676767;
-}
+            }
 
-.main-table td.sl-no {
-    color: #1F2933;
-}
+            .main-table td {
+                color: #676767;
+            }
 
-.main-table td.temple-name {
-    font-family: 'Samarkan';
-    font-size: 24px;
-    margin-bottom: 2px;
-}
+            .main-table td.sl-no {
+                color: #1F2933;
+            }
 
-/* ================= FOOTER ================= */
+            .main-table td.temple-name {
+                font-family: 'Samarkan';
+                font-size: 24px;
+                margin-bottom: 2px;
+            }
 
-.site-footer {
-    background-color: #ff7722;
-    margin: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
-    margin-top: 40px;
-}
+            /* ================= FOOTER ================= */
 
-.footer-text {
-    text-align: center;
-    justify-self: center;
-}
+            .site-footer {
+                background-color: #ff7722;
+                margin: 20px;
+                border-radius: 16px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75);
+                margin-top: 40px;
+            }
 
-.footer-spacer {
-    width: 48px;
-}
+            .footer-text {
+                text-align: center;
+                justify-self: center;
+            }
 
-.footer-text h1 {
-    margin: 0;
-    font-family: 'Cinzel', serif;
-    color: #3F3F46;
-    font-size: 40px;	
-}
+            .footer-spacer {
+                width: 48px;
+            }
 
-.footer-text p {
-    margin: 4px 0 0;
-    font-family: 'Cinzel', serif;
-    color: #3F3F46;
-    font-size: 20px;
-    max-width: 1400px;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
+            .footer-text h1 {
+                margin: 0;
+                font-family: 'Cinzel', serif;
+                color: #3F3F46;
+                font-size: 40px;	
+            }
 
-</style>
+            .footer-text p {
+                margin: 4px 0 0;
+                font-family: 'Cinzel', serif;
+                color: #3F3F46;
+                font-size: 20px;
+                max-width: 1400px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+
+        </style>
 
 <!--======= TITLE =======-->
     	<title>
@@ -320,7 +331,7 @@ img {
 
 <!--======= INTRODUCTION =======-->
 		<h1 class="intro-headings">Namaste, and welcome to our project</h1>
-			<div class="temple-headings">
+			<div class="temple-headingss">
 				<p>We are Chiranjiv and Suhas, students of class 7 "C" in <a href="https://jgrvk.rvkcbse.in/web/">JGRVK</a>. This website, our school project, is about 15 holy temples of our state - Karnataka.<br> Enjoy! </p>
 			</div>
 		<a href="https://jgrvk.rvkcbse.in/web/">
@@ -471,303 +482,331 @@ img {
 
 		<ul>
 
-			<li class="temple-headings">Shri Chamundeshwari Devi Devasthana
+			<li><div class="temple-headings">Shri Chamundeshwari Devi Devasthana</div>
 
-			    <p>
-					Located atop Mysuru's Chamundi Hills, this temple is dedicated to Goddess Chamundeshwari, a fierce form of Parvati identified with Durga. The
-                    deity here is revered as the Nada Devi by Kannadigas, and was the royal patron deity of the Wodeyar dynasty. Traditionally associated as the 
-                    place where the goddess slew the demon Mahishasura, it is regarded as one of the 18 Maha Shakti Peethas, as the hair of Sati is believed to have
-                    fallen here. The temple attracts large numbers of devotees and tourists every year, especially during the annual festival of Navaratri, when
-                    the goddess is adorned with different jewelry and attire each day. The temple's location on the hill also offers panoramic views of Mysuru 
-                    city.
-				</p>
+                <div class="temple-headings">
+                    <p>
+                        Located atop Mysuru's Chamundi Hills, this temple is dedicated to Goddess Chamundeshwari, a fierce form of Parvati identified with Durga. The
+                        deity here is revered as the Nada Devi by Kannadigas, and was the royal patron deity of the Wodeyar dynasty. Traditionally associated as the 
+                        place where the goddess slew the demon Mahishasura, it is regarded as one of the 18 Maha Shakti Peethas, as the hair of Sati is believed to have
+                        fallen here. The temple attracts large numbers of devotees and tourists every year, especially during the annual festival of Navaratri, when
+                        the goddess is adorned with different jewelry and attire each day. The temple's location on the hill also offers panoramic views of Mysuru 
+                        city.
+                    </p>
 
-				<div class="img-pair">
-					<img src="images/chamundi.jpg" alt="chamundi temple photo">
-					<img src="images/chamundig.jpg" alt="chamundi god photo">
+                    <div class="img-pair">
+                        <img src="images/chamundi.jpg" alt="chamundi temple photo">
+                        <img src="images/chamundig.jpg" alt="chamundi god photo">
+                    </div>
 				</div>
 				<p class="img-desc"> Images showing the Chamundeshwari Temple Gopuram and the Utsava Murthi of the Goddess. </p>
-				
+
 			</li>
 			
-			<li class="temple-headings">Shri Manjunatha Swamy Devasthana
+			<li><div class="temple-headings">Shri Manjunatha Swamy Devasthana</div>
 
-			    <p>
-					Situated in Dharmasthala in the Western Ghats, this temple is dedicated to Lord Shiva as Manjunatha. The temple is believed to have been built
-                    800 years ago by a Jain family to protect Dharma and worship Daivas. Even today, the worship of the four Dharma Daivas continues, and
-                    Dharmasthala is widely known for its charitable activities and emphasis on Dharma. The temple attracts large numbers of devotees and tourists 
-                    every year, especially during the annual festival of Maha Shivaratri. The temple is also known for its unique tradition of worshipping the deity
-                    with a mixture of sandalwood paste and turmeric, which is believed to have medicinal properties.
-				</p>		
-				
-				<div class="img-pair">
-					<img src="images/dharmasthala.jpg" alt="dharmasthala temple photo">
-					<img src="images/dharmasthalag.jpg" alt="dharmasthala god photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Situated in Dharmasthala in the Western Ghats, this temple is dedicated to Lord Shiva as Manjunatha. The temple is believed to have been built
+                        800 years ago by a Jain family to protect Dharma and worship Daivas. Even today, the worship of the four Dharma Daivas continues, and
+                        Dharmasthala is widely known for its charitable activities and emphasis on Dharma. The temple attracts large numbers of devotees and tourists 
+                        every year, especially during the annual festival of Maha Shivaratri. The temple is also known for its unique tradition of worshipping the deity
+                        with a mixture of sandalwood paste and turmeric, which is believed to have medicinal properties.
+                    </p>		
+                    
+                    <div class="img-pair">
+                        <img src="images/dharmasthala.jpg" alt="dharmasthala temple photo">
+                        <img src="images/dharmasthalag.jpg" alt="dharmasthala god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Manjunatha Temple Gopuram and the idol of the God. </p>
 			
 			</li>
 			
-			<li class="temple-headings">Shri Srikanteshwara Swamy Devasthana
+			<li><div class="temple-headings">Shri Srikanteshwara Swamy Devasthana</div>
 
-			    <p>
-				    Located on the banks of the Kabini River, this temple is dedicated to Lord Shiva as Srikanteshwara or Nanjundeshwara. 'Nanjundeshwara'
-                    translates to the 'God who drank poison', referring to Shiva drinking the Halahala poison during the Samudra Manthan incident. The deity in this
-                    temple is believed to have immense healing properties and is often referred to as 'Dakshina Kashi', being an important Shaivite pilgrimage 
-                    center in Karnataka. Moreover, the temple is one of the 18 Maha Shakti Peethas, as the feet of Sati are believed to have fallen here. It is also 
-                    known for its annual festival called 'Nanjundeshwara Jayanthi', the temple attracts large numbers of devotees and tourists every year, 
-                    especially during the festival.
-				</p>		
-				
-				<div class="img-pair">
-					<img src="images/nanjangud.jpg" alt="nanjangud temple photo">
-					<img src="images/nanjangudg.jpg" alt="nanjangud shiva statue">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Located on the banks of the Kabini River, this temple is dedicated to Lord Shiva as Srikanteshwara or Nanjundeshwara. 'Nanjundeshwara'
+                        translates to the 'God who drank poison', referring to Shiva drinking the Halahala poison during the Samudra Manthan incident. The deity in this
+                        temple is believed to have immense healing properties and is often referred to as 'Dakshina Kashi', being an important Shaivite pilgrimage 
+                        center in Karnataka. Moreover, the temple is one of the 18 Maha Shakti Peethas, as the feet of Sati are believed to have fallen here. It is also 
+                        known for its annual festival called 'Nanjundeshwara Jayanthi', the temple attracts large numbers of devotees and tourists every year, 
+                        especially during the festival.
+                    </p>		
+                    
+                    <div class="img-pair">
+                        <img src="images/nanjangud.jpg" alt="nanjangud temple photo">
+                        <img src="images/nanjangudg.jpg" alt="nanjangud shiva statue">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Srikantheshwara Temple Gopuram and a Shiva Statue in Nanjangud. </p>
 			
 			</li>
 			
-			<li class="temple-headings">Udupi Shri Krishna Matha
+			<li><div class="temple-headings">Udupi Shri Krishna Matha</div>
 
-			    <p>
-					Located in the coastal town of Udupi, this temple is dedicated to Lord Krishna and was established in the 13th century by the Vaishnavite 
-                    Philosopher-saint Madhvacharya. The temple is administered by eight monasteries known as the Ashta Mathas, which take turns managing the temple 
-                    for 2 years through a rotational system called Paryaya. The Krishna idol, which has miraculously rotated, is uniquely worshipped through a 
-                    silver-plated window known as Kanakana Kindi, named after Haridasa saint Kanakadasa. The temple remains an important center of Dvaita Vedanta 
-                    philosophy.
-				</p>
-				
-				<div class="img-pair">
-					<img src="images/udupi.jpg" alt="udupi temple photo">
-					<img src="images/udupig.jpeg" alt="udupi god photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Located in the coastal town of Udupi, this temple is dedicated to Lord Krishna and was established in the 13th century by the Vaishnavite 
+                        Philosopher-saint Madhvacharya. The temple is administered by eight monasteries known as the Ashta Mathas, which take turns managing the temple 
+                        for 2 years through a rotational system called Paryaya. The Krishna idol, which has miraculously rotated, is uniquely worshipped through a 
+                        silver-plated window known as Kanakana Kindi, named after Haridasa saint Kanakadasa. The temple remains an important center of Dvaita Vedanta 
+                        philosophy.
+                    </p>
+                    
+                    <div class="img-pair">
+                        <img src="images/udupi.jpg" alt="udupi temple photo">
+                        <img src="images/udupig.jpeg" alt="udupi god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Udupi Krishna Temple Gopuram and the idol of the God. </p>
 			
 			</li>
 			
-			<li class="temple-headings">Shri Mahabaleshwara Devasthana
+			<li><div class="temple-headings">Shri Mahabaleshwara Devasthana</div>
 
-			    <p>
-					Situated in Gokarna along the Arabian Sea coast, this temple dedicated to Lord Shiva houses the revered Atmalinga. One of the seven 
-                    Muktikshetras of Karnataka, the Atmalinga was brought by the demon king Ravana from Mount Kailasa and became fixed at Gokarna. Nearby beaches
-                    such as Gokarna Beach and Om Beach add to the town’s prominence. The temple is one of the 18 Maha Shakti Peethas, as the head of Sati is 
-                    believed to have fallen here. Along with the temple, the town of Gokarna attracts large numbers of devotees and tourists every year, especially 
-                    during the annual festival of Maha Shivaratri.
-				</p>
-					
-				<div class="img-pair">
-					<img src="images/gokarna.jpg" alt="gokarna temple photo">
-					<img src="images/ombeach.jpg" alt="om beach photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Situated in Gokarna along the Arabian Sea coast, this temple dedicated to Lord Shiva houses the revered Atmalinga. One of the seven 
+                        Muktikshetras of Karnataka, the Atmalinga was brought by the demon king Ravana from Mount Kailasa and became fixed at Gokarna. Nearby beaches
+                        such as Gokarna Beach and Om Beach add to the town’s prominence. The temple is one of the 18 Maha Shakti Peethas, as the head of Sati is 
+                        believed to have fallen here. Along with the temple, the town of Gokarna attracts large numbers of devotees and tourists every year, especially 
+                        during the annual festival of Maha Shivaratri.
+                    </p>
+                        
+                    <div class="img-pair">
+                        <img src="images/gokarna.jpg" alt="gokarna temple photo">
+                        <img src="images/ombeach.jpg" alt="om beach photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Mahabaleshwara Temple Gopuram illuminated with lights and the nearby famous Om Beach. </p>
 	
 			</li>
 
-			<li class="temple-headings">Shri Murudeshwara Devasthana
+			<li><div class="temple-headings">Shri Murudeshwara Devasthana</div>
 
-			    <p>
-					Located in Murudeshwar, the coast south of Gokarna, this temple is dedicated to Lord Shiva and is associated with the Atmalinga legend of 
-                    Gokarna. The site houses a towering 123-foot statue of Lord Shiva installed in 2008, making it one of the tallest Shiva statues in the world.
-                    The temple complex also features a 20-storied gopuram and offers views of the statue with the Arabian Sea as its background.Shiva is revered 
-                    here as Murudeshwara, and the temple attracts large numbers of devotees and tourists alike. The temple is also known for its annual festival 
-                    called 'Mahashivaratri', which attracts large crowds of devotees.
-				</p>		
-					
-				<div class="img-pair">
-					<img src="images/murudeshwar.jpg" alt="murudeshwar temple photo">
-					<img src="images/murdeshwarg.jpg" alt="murudeshwar shiva statue">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Located in Murudeshwar, the coast south of Gokarna, this temple is dedicated to Lord Shiva and is associated with the Atmalinga legend of 
+                        Gokarna. The site houses a towering 123-foot statue of Lord Shiva installed in 2008, making it one of the tallest Shiva statues in the world.
+                        The temple complex also features a 20-storied gopuram and offers views of the statue with the Arabian Sea as its background.Shiva is revered 
+                        here as Murudeshwara, and the temple attracts large numbers of devotees and tourists alike. The temple is also known for its annual festival 
+                        called 'Mahashivaratri', which attracts large crowds of devotees.
+                    </p>		
+                        
+                    <div class="img-pair">
+                        <img src="images/murudeshwar.jpg" alt="murudeshwar temple photo">
+                        <img src="images/murdeshwarg.jpg" alt="murudeshwar shiva statue">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Murudeshwara Temple Gopuram and the famous Shiva Statue. </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Virupaksha Devasthana
+			<li><div class="temple-headings">Shri Virupaksha Devasthana</div>
 
-			    <p>
-					Located in the UNESCO World Heritage Site of Hampi, this temple is dedicated to Lord Shiva as Virupaksha. It is one of the oldest functioning 
-                    temples in India and was a prominent center of worship during the Vijayanagara Empire. The temple complex features a towering 9-storied gopuram 
-                    and intricate carvings reflecting Dravidian architecture. Along with the famed Hampi ruins, the temple attracts thousands of devotees and 
-                    tourists every year. They also worship the Virupaksha Linga, which is believed to have been consecrated by Lord Shiva himself. The temple's 
-                    location amidst the ruins of Hampi adds to its historical and spiritual significance, making it a must-visit destination for those interested in 
-                    Karnataka's rich heritage.
-				</p>
-					
-				<div class="img-pair">
-					<img src="images/virupaksha.jpg" alt="virupaksha temple photo">
-					<img src="images/chariot.jpg" alt="hampi stone chariot">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Located in the UNESCO World Heritage Site of Hampi, this temple is dedicated to Lord Shiva as Virupaksha. It is one of the oldest functioning 
+                        temples in India and was a prominent center of worship during the Vijayanagara Empire. The temple complex features a towering 9-storied gopuram 
+                        and intricate carvings reflecting Dravidian architecture. Along with the famed Hampi ruins, the temple attracts thousands of devotees and 
+                        tourists every year. They also worship the Virupaksha Linga, which is believed to have been consecrated by Lord Shiva himself. The temple's 
+                        location amidst the ruins of Hampi adds to its historical and spiritual significance, making it a must-visit destination for those interested in 
+                        Karnataka's rich heritage.
+                    </p>
+                        
+                    <div class="img-pair">
+                        <img src="images/virupaksha.jpg" alt="virupaksha temple photo">
+                        <img src="images/chariot.jpg" alt="hampi stone chariot">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Virupaksha Temple Gopuram and the famed Stone Chariot in the ruins of Hampi. </p>
 	
 			</li>
 
-			<li class="temple-headings">Shri Shakambhari Shakti Peeth
+			<li><div class="temple-headings">Shri Shakambhari Shakti Peeth</div>
 
-			    <p>
-					Situated near Badami, this temple is dedicated to Goddess Banashankari, a form of Parvati also known as Shakambhari. Shakambhari translates to 
-                    the 'bearer of vegetation', and is worshipped as the provider of nourishment. The temple, believed to date back to the 7th century during the 
-                    Chalukya period, is located near a sacred lake called Haridra Tirtha. In reverence to the Holy Goddess, a replica of the temple has been built 
-                    in Banashankari, a neighbourhood located in the state's capital of Bengaluru. The temple is one of the 18 Maha Shakti Peethas, as the feet of
-                    Sati are believed to have fallen here.
-				</p>
-					
-				<div class="img-pair">
-					<img src="images/banshankari.jpg" alt="banshankari temple photo">
-					<img src="images/banshankarig.jpg" alt="banshankari god photo">
-				</div>
-				<p class="img-desc"> Images showing the Banashankari Temple Gopuram and the idol of the Goddess. </p>
+                <div class="temple-headings">
+                    <p>
+                        Situated near Badami, this temple is dedicated to Goddess Banashankari, a form of Parvati also known as Shakambhari. Shakambhari translates to 
+                        the 'bearer of vegetation', and is worshipped as the provider of nourishment. The temple, believed to date back to the 7th century during the 
+                        Chalukya period, is located near a sacred lake called Haridra Tirtha. In reverence to the Holy Goddess, a replica of the temple has been built 
+                        in Banashankari, a neighbourhood located in the state's capital of Bengaluru. The temple is one of the 18 Maha Shakti Peethas, as the feet of
+                        Sati are believed to have fallen here.
+                    </p>
+                        
+                    <div class="img-pair">
+                        <img src="images/banshankari.jpg" alt="banshankari temple photo">
+                        <img src="images/banshankarig.jpg" alt="banshankari god photo">
+                    </div>
+                    <p class="img-desc"> Images showing the Banashankari Temple Gopuram and the idol of the Goddess. </p>
 
-				<div class="h-img">
-					<img src="images/bbanshankari.jpg" alt="bengaluru banshankari temple photo">
-				</div>
+                    <div class="h-img">
+                        <img src="images/bbanshankari.jpg" alt="bengaluru banshankari temple photo">
+                    </div>
 
-				<div class="v-img">
-					<img src="images/bbanshankarig.jpeg" alt="bengaluru banshankari temple photo">
-				</div>
+                    <div class="v-img">
+                        <img src="images/bbanshankarig.jpeg" alt="bengaluru banshankari temple photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Banashankari Temple Gopuram in Bengaluru and the idol of the Goddess. </p>
 	
 			</li>
 
-			<li class="temple-headings">Shri Sharada Peeth
+			<li><div class="temple-headings">Shri Sharada Peeth</div>
 
-			    <p>
-					Officially the Shri Jagadguru Shankaracharya Mahasamsthana Dakshinamnaya Shri Sharada Peeth, this temple located on the banks of the Tunga River
-                    in Sringeri is dedicated to Goddess Sharadamba, the deity of knowledge and wisdom. The Sharada Peeth was established by Adi Shankaracharya in 
-                    the 8th century as the first of his four principal monasteries (Amnaya Peethas) in India. The temple complex is also home to the Vidyashankara 
-                    Temple, known for its architectural brilliance and astronomical alignments. Even today, Sringeri remains an important center of Advaita Vedanta 
-                    learning. Moreover, the temple is one of the 18 Maha Shakti Peethas, as the hand of Sati is believed to have fallen here.
-				</p>
-					
-				<div class="img-pair">
-					<img src="images/sringeri.jpg" alt="sringeri temple photo">
-					<img src="images/sringerig.jpg" alt="sringeri god photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Officially the Shri Jagadguru Shankaracharya Mahasamsthana Dakshinamnaya Shri Sharada Peeth, this temple located on the banks of the Tunga River
+                        in Sringeri is dedicated to Goddess Sharadamba, the deity of knowledge and wisdom. The Sharada Peeth was established by Adi Shankaracharya in 
+                        the 8th century as the first of his four principal monasteries (Amnaya Peethas) in India. The temple complex is also home to the Vidyashankara 
+                        Temple, known for its architectural brilliance and astronomical alignments. Even today, Sringeri remains an important center of Advaita Vedanta 
+                        learning. Moreover, the temple is one of the 18 Maha Shakti Peethas, as the hand of Sati is believed to have fallen here.
+                    </p>
+                        
+                    <div class="img-pair">
+                        <img src="images/sringeri.jpg" alt="sringeri temple photo">
+                        <img src="images/sringerig.jpg" alt="sringeri god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Sharadamba Temple Gopuram and the idol of the Goddess. </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Mookambika Devi Devasthana
+			<li><div class="temple-headings">Shri Mookambika Devi Devasthana</div>
 
-			    <p>
-					Situated in the Western Ghats near the Kodachadri hills, this temple is dedicated to Goddess Mookambika, a form of Shakti regarded as the 
-                    Supreme Goddess. According to legend, the goddess defeated the demon Mookasura here. The temple is believed to have been consecrated by Adi 
-                    Shankaracharya. It is a major pilgrimage center, being one of the seven Muktikshetras of Karnataka. The temple is also known for its unique 
-                    tradition of worshipping the deity with a mixture of sandalwood paste and turmeric, which is believed to have medicinal properties. Mookambika
-                    is revered as a compassionate goddess who fulfills the wishes of her devotees, and the temple attracts large numbers of pilgrims, especially 
-                    During Navaratri celebrations.	
-				</p>
-					
-				<div class="h-img">
-					<img src="images/kollur.jpg" alt="mookambika temple photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Situated in the Western Ghats near the Kodachadri hills, this temple is dedicated to Goddess Mookambika, a form of Shakti regarded as the 
+                        Supreme Goddess. According to legend, the goddess defeated the demon Mookasura here. The temple is believed to have been consecrated by Adi 
+                        Shankaracharya. It is a major pilgrimage center, being one of the seven Muktikshetras of Karnataka. The temple is also known for its unique 
+                        tradition of worshipping the deity with a mixture of sandalwood paste and turmeric, which is believed to have medicinal properties. Mookambika
+                        is revered as a compassionate goddess who fulfills the wishes of her devotees, and the temple attracts large numbers of pilgrims, especially 
+                        During Navaratri celebrations.	
+                    </p>
+                        
+                    <div class="h-img">
+                        <img src="images/kollur.jpg" alt="mookambika temple photo">
+                    </div>
+                </div>
 				<p class="img-desc"> An image showing the Mookambika Temple Gopuram. </p>
 	
 			</li>
 
-			<li class="temple-headings">Shri Kalabhairaveshwara Swamy Devasthana
+			<li><div class="temple-headings">Shri Kalabhairaveshwara Swamy Devasthana</div>
 
-			    <p>
-					Located atop a hill near Yedeyuru in Mandya district, this temple is dedicated to Lord Kaal Bhairav, a fierce manifestation of Shiva. The temple
-                    is closely associated with the Adichunchanagiri Math, a prominent spiritual institution. A distinctive feature of this temple is the special 
-                    reverence given to dogs. Devotees often bring dogs to the temple, and it is believed that feeding and caring for dogs here can bring blessings
-                    from Lord Bhairav. The temple is also known for its annual festival called 'Bhairava Jayanthi', which attracts large crowds of devotees. At 
-                    Adichunchanagiri, dogs are treated with respect and are considered sacred companions of the deity.
-				</p>
+                <div class="temple-headings">
+                    <p>
+                        Located atop a hill near Yedeyuru in Mandya district, this temple is dedicated to Lord Kaal Bhairav, a fierce manifestation of Shiva. The temple
+                        is closely associated with the Adichunchanagiri Math, a prominent spiritual institution. A distinctive feature of this temple is the special 
+                        reverence given to dogs. Devotees often bring dogs to the temple, and it is believed that feeding and caring for dogs here can bring blessings
+                        from Lord Bhairav. The temple is also known for its annual festival called 'Bhairava Jayanthi', which attracts large crowds of devotees. At 
+                        Adichunchanagiri, dogs are treated with respect and are considered sacred companions of the deity.
+                    </p>
 
-				<div class="v-img">
-					<img src="images/adichunchanagiri.jpg" alt="adi temple photo">
-				</div>
-					
-				<div class="img-pair">
-					<img src="images/adig.jpg" alt="adi god photo">
-					<img src="images/adid.jpg" alt="adi dog photo">
-				</div>
+                    <div class="v-img">
+                        <img src="images/adichunchanagiri.jpg" alt="adi temple photo">
+                    </div>
+                        
+                    <div class="img-pair">
+                        <img src="images/adig.jpg" alt="adi god photo">
+                        <img src="images/adid.jpg" alt="adi dog photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Adichunchanagiri Temple Gopuram, the idol of the God, and dogs being worshipped at the temple </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Hasanamba Devi Devasthana
+			<li><div class="temple-headings">Shri Hasanamba Devi Devasthana</div>
 
-			    <p>
-					Situated in the city of Hassan, this temple is dedicated to Goddess Hasanamba, the presiding deity of the region. The temple is unique because 
-                    it opens to devotees only once a year during the Deepavali festival, for about a week. During this period, thousands of devotees gather for 
-                    darshan. The temple is believed to have been built in the 12th century during the Hoysala period. The deity is revered as a powerful goddess who
-                    protects her devotees from evil forces. The temple's annual opening and the belief in the goddess's protective powers make it a significant 
-                    spiritual center in Karnataka.
-				</p>
-					
-				<div class="v-img">
-					<img src="images/hasanamba.jpg" alt="hasanamba temple photo">
-				</div>
+                <div class="temple-headings">
+                    <p>
+                        Situated in the city of Hassan, this temple is dedicated to Goddess Hasanamba, the presiding deity of the region. The temple is unique because 
+                        it opens to devotees only once a year during the Deepavali festival, for about a week. During this period, thousands of devotees gather for 
+                        darshan. The temple is believed to have been built in the 12th century during the Hoysala period. The deity is revered as a powerful goddess who
+                        protects her devotees from evil forces. The temple's annual opening and the belief in the goddess's protective powers make it a significant 
+                        spiritual center in Karnataka.
+                    </p>
+                        
+                    <div class="v-img">
+                        <img src="images/hasanamba.jpg" alt="hasanamba temple photo">
+                    </div>
 
-				<div class="h-img">
-					<img src="images/hasanambag.jpg" alt="hasanamba god photo">
-				</div>
+                    <div class="h-img">
+                        <img src="images/hasanambag.jpg" alt="hasanamba god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Hasanamba Temple Gopuram and the idol of the Goddess. </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Nimishambha Devi Devasthana
+			<li><div class="temple-headings">Shri Nimishambha Devi Devasthana</div>
 
-			    <p>
-					Situated on the banks of the River Kaveri near Srirangapatna, this temple is dedicated to Goddess Nimishamba, a fierce form of Parvati. The name 
-                    'Nimishamba' is derived from the word 'nimisha', meaning 'a minute', and 'amba', meaning 'mother goddess', signifying the belief that the 
-                    goddess fulfills devotees’ prayers within a minute. The temple is believed to have been built during the reign of the Wodeyars of Mysore. It 
-                    remains an important Shakti shrine in the region and attracts large numbers of devotees, especially on Fridays and during Navaratri 
-                    celebrations. The temple's location near the Kaveri River adds to its spiritual significance, as the river is considered sacred in Hinduism.
-				</p>
-					
-				<div class="h-img">
-					<img src="images/nimishamba.jpg" alt="nimishamba temple photo">
-				</div>
+                <div class="temple-headings">
+			        <p>
+                        Situated on the banks of the River Kaveri near Srirangapatna, this temple is dedicated to Goddess Nimishamba, a fierce form of Parvati. The name 
+                        'Nimishamba' is derived from the word 'nimisha', meaning 'a minute', and 'amba', meaning 'mother goddess', signifying the belief that the 
+                        goddess fulfills devotees’ prayers within a minute. The temple is believed to have been built during the reign of the Wodeyars of Mysore. It 
+                        remains an important Shakti shrine in the region and attracts large numbers of devotees, especially on Fridays and during Navaratri 
+                        celebrations. The temple's location near the Kaveri River adds to its spiritual significance, as the river is considered sacred in Hinduism.
+                    </p>
+                        
+                    <div class="h-img">
+                        <img src="images/nimishamba.jpg" alt="nimishamba temple photo">
+                    </div>
 
-				<div class="v-img">
-					<img src="images/nimishambag.jpg" alt="nimishamba god photo">
-				</div>
+                    <div class="v-img">
+                        <img src="images/nimishambag.jpg" alt="nimishamba god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Nimishamba Temple Gopuram and the idol of the Goddess. </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Annapoorneshwari Devasthana
+			<li><div class="temple-headings">Shri Annapoorneshwari Devasthana</div>
 
-			    <p>
-					Located in the scenic Western Ghats of Chikkamagaluru district, this temple is dedicated to Goddess Annapoorneshwari, the goddess of nourishment 
-                    and food. The temple is known for its tradition of serving meals to all devotees without discrimination, free of cost every day. The temple is 
-                    believed to have been established in the 15th century by a local chieftain named Adi Shankaracharya. The deity is revered as a compassionate 
-                    goddess who provides sustenance to all, and the temple's charitable food service continues to be a significant aspect of its spiritual mission.
-                    Throughout the year, especially during festivals like Navaratri, the temple attracts large numbers of devotees who come to seek the blessings of
-                    the goddess and partake in the communal meals. The temple's location amidst the lush greenery of the Western Ghats adds to its serene and
-                    spiritual ambiance, making it a popular pilgrimage destination in Karnataka.
-				</p>
-					
-				<div class="h-img">
-					<img src="images/hornadu.webp" alt="hornadu temple photo">
-				</div>
-				
-				<div class="v-img">
-					<img src="images/hornadug.webp" alt="hornadu god photo">
-				</div>
-
+                <div class="temple-headings">
+                    <p>
+                        Located in the scenic Western Ghats of Chikkamagaluru district, this temple is dedicated to Goddess Annapoorneshwari, the goddess of nourishment 
+                        and food. The temple is known for its tradition of serving meals to all devotees without discrimination, free of cost every day. The temple is 
+                        believed to have been established in the 15th century by a local chieftain named Adi Shankaracharya. The deity is revered as a compassionate 
+                        goddess who provides sustenance to all, and the temple's charitable food service continues to be a significant aspect of its spiritual mission.
+                        Throughout the year, especially during festivals like Navaratri, the temple attracts large numbers of devotees who come to seek the blessings of
+                        the goddess and partake in the communal meals. The temple's location amidst the lush greenery of the Western Ghats adds to its serene and
+                        spiritual ambiance, making it a popular pilgrimage destination in Karnataka.
+                    </p>
+                        
+                    <div class="h-img">
+                        <img src="images/hornadu.webp" alt="hornadu temple photo">
+                    </div>
+                    
+                    <div class="v-img">
+                        <img src="images/hornadug.webp" alt="hornadu god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Annapoorneshwari Temple Entrance and the idol of the Goddess. </p>
 	
 			</li>
 			
-			<li class="temple-headings">Shri Hoysaleswara Devasthana
-
-			    <p>
-					Located in Halebidu, the former capital of the Hoysala Empire, this temple is dedicated to Lord Shiva as Hoysaleswara. Built in the 12th century
-                    during the reign of King Vishnuvardhana, the temple is a masterpiece of Hoysala architecture. Famous for its intricate stone carvings depicting 
-                    Scenes from the Ramayana, Mahabharata, and various Puranas, this UNESCO World Heritage Site interests large numbers of devotees and tourists 
-                    daily. Although partially damaged during invasions, the temple remains one of the finest examples of medieval Indian temple art.
-				</p>
-					
-				<div class="h-img">
-					<img src="images/halebidu.jpg" alt="halebidu temple photo">
-				</div>
-				
-				<div class="h-img">
-					<img src="images/halebidug.jpg" alt="halebidu god photo">
-				</div>
-
+			<li><div class="temple-headings">Shri Hoysaleswara Devasthana</div>
+                
+                <div class="temple-headings">
+                    <p>
+                        Located in Halebidu, the former capital of the Hoysala Empire, this temple is dedicated to Lord Shiva as Hoysaleswara. Built in the 12th century
+                        during the reign of King Vishnuvardhana, the temple is a masterpiece of Hoysala architecture. Famous for its intricate stone carvings depicting 
+                        Scenes from the Ramayana, Mahabharata, and various Puranas, this UNESCO World Heritage Site interests large numbers of devotees and tourists 
+                        daily. Although partially damaged during invasions, the temple remains one of the finest examples of medieval Indian temple art.
+                    </p>
+                        
+                    <div class="h-img">
+                        <img src="images/halebidu.jpg" alt="halebidu temple photo">
+                    </div>
+                    
+                    <div class="h-img">
+                        <img src="images/halebidug.jpg" alt="halebidu god photo">
+                    </div>
+                </div>
 				<p class="img-desc"> Images showing the Halebidu Temple Entrance and the idol of the God. </p>
 	
 			</li>
