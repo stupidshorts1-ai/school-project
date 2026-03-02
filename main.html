@@ -5,6 +5,7 @@
 	<head>
         
     	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <!--======= FONTS =======-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,6 +81,16 @@
                 padding-block: 0;
             }
 
+			iframe {
+				width: 90%;
+				height: 500px;
+                border-collapse: collapse;
+                margin: auto;
+                border-radius: 30px;
+                overflow: hidden;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+			}
+			
             a {
                 color: inherit;
             }
@@ -233,7 +244,6 @@
                 background-color: #ff7722;
                 color: #3d3d3d;
                 font-size: 18px;
-
             }
 
             .main-table td {
@@ -321,13 +331,22 @@
 		<h1 class="intro-headings">Namaste, and welcome to our project</h1>
 			<div class="temple-headings">
 				<p>We are Chiranjiv and Suhas, students of class 7 "C" in <a href="https://jgrvk.rvkcbse.in/web/">JGRVK</a>. This website, our school project, is about 15 holy temples of our state - Karnataka.<br> Enjoy! </p>
+				<p> Check out some of our other projects!</p>
 			</div>
+
+		<div class="h-img">
+			<iframe src="previous website used for internal linking.html">
+			</iframe>
+		</div>
+					<p class="img-desc"> One of our previous projects, go to it <a href="previous website used for internal linking.html">here</a>!</p>
+
 		<a href="https://jgrvk.rvkcbse.in/web/">
 			<div class="h-img">
 				<img src ="images/jgrvk.jpg" alt="jgrvk-photo">
 			</div>
 		</a>
 		<p class="img-desc"> Our School </p>
+			
 				<h2> <a href="#temple-table"> Go to Temple Table </a> </h2>
 				<h2> <a href="#temple-info"> Go to Temple Info </a> </h2>
 <!--======= TABLE =======-->
@@ -335,6 +354,11 @@
 		 	 <table class="main-table">
 
                     <tr>
+                        <th colspan="6">The Temple Table</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="16">N<br>O<br>T<br>E<br><br>-<br><br>A<br>L<br>L<br><br>T<br>E<br>M<br>P<br>L<br>E<br>S<br><br>A<br>R<br>E<br><br>I<br>N<br><br>K<br>A<br>R<br>N<br>A<br>T<br>A<br>K<br>A<br><br>S<br>T<br>A<br>T<br>E</td>
                         <th>Number</th>
                         <th>Temple</th>
                         <th>God</th>
@@ -342,7 +366,7 @@
                         <th>District</th>
                     </tr>
 
-					<tr>
+                    <tr>
                         <td class ="sl-no">1.</td>
                         <td class="temple-name">Shri Chamundeshwari Devi Devasthana</td>
                         <td>Chamundeshwari → Parvati</td>
