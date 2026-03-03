@@ -256,6 +256,7 @@
         <div class="header">
             <h1>Top 10 Fastest Cars in the World 2026</h1>
             <p>Ultimate Speed Machines & Engineering Marvels</p>
+            <p><a href="main.html">Go back to the main page</a></p>
         </div>
         <div class="table-container">
             <table class="fastest-cars-table">
@@ -380,5 +381,4 @@
         </div>
     </div>
 </body>
-
 </html>
